@@ -13,24 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'Random Quiz app',
-            style: TextStyle(color: Colors.black),
-          ),
-          backgroundColor: Colors.green,
-        ),
-        backgroundColor: Colors.grey.shade900,
-        body: const SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10.0),
-            child: QuizApp(),
-          ),
-        ),
-      ),
+      home: QuizMain(),
     );
   }
 }

@@ -1,6 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
+class QuizMain extends StatelessWidget {
+  const QuizMain({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'Random Quiz app',
+          style: TextStyle(color: Colors.black),
+        ),
+        backgroundColor: Colors.green,
+      ),
+      backgroundColor: Colors.grey.shade900,
+      body: const SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 10.0),
+          child: QuizApp(),
+        ),
+      ),
+    );
+  }
+}
+
 class QuizApp extends StatefulWidget {
   const QuizApp({Key? key}) : super(key: key);
 
